@@ -15,8 +15,8 @@ function addCustomSpeedIcon() {
         speedButton.className = 'ytp-button custom-speed-icon';
         speedButton.title = '自訂播放速度';
         speedButton.style.cssText = `
-            width: 45px;
-            height: 45px;
+            width: 43.5px;
+            height: 43.5px;
             background: url('https://img.icons8.com/ios-filled/50/ffffff/speed.png') no-repeat center;
             background-size: 65%;
             margin-right: 12px;
@@ -89,9 +89,9 @@ function showCustomSpeedPanel() {
     // 創建滑桿
     const speedSlider = document.createElement('input');
     speedSlider.type = 'range';
-    speedSlider.min = '0.25';
+    speedSlider.min = '0.1';
     speedSlider.max = '16';
-    speedSlider.step = '0.25';
+    speedSlider.step = '0.1';
     speedSlider.value = document.querySelector('video')?.playbackRate || '1';
     speedSlider.style.cssText = `
         width: calc(100% - 16px);
